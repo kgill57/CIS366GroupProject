@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Problem/Solution Form</title>
+
+    <style type="text/css">
+    
+        #problemSection, #solutionSection {
+            display: none;
+        }
+        input[type=]
+    </style>
+       <script type="text/javascript">
+        
+        function showField(){
+                
+                if(document.getElementByID('p').checked){
+                    
+                    document.getElementById('problemSection').style.display = 'block';
+                }
+                else if(document.getElementByID('s').checked){
+                    
+                    document.getElementById('solutionSection').style.display = 'block';
+                }
+                else if(document.getElementById('b').checked){
+                    
+                    document.getElementById('problemSection').style.display = 'block';
+                    document.getElementById('solutionSection').style.display = 'block';
+                }
+        }
+    </script>
+</head>
+
+<body>
+
+    <h2>Problem/Solution Form</h2>
+    
+        <form name="PSForm" method="post" action="Confirmation.html">
+            
+            <!-- Labels and text fields for first and last names -->
+            <label>First Name: <input type="text" name="fn" id=fname placeholder="First Name" required></label>
+            <label>Last Name: <input type="text" name="ln" id=lname placeholder="Last Name" required></label>
+            <br />
+            
+            <!-- Labels and text fields for email -->
+            <label>E-mail: <input type="email" name="email" id="e_mail"/></label>     
+            <label>Confirm E-mail: <input type="email" name="email2" id="e_mail2" onblur="checkEmail();"/></label>
+            <br />
+            
+            <!-- Labels and check boxes for problem/solution or both -->
+            <p>Do you wish to submit a problem, solution, or both?</p>
+            <label><input type="radio" name="type" id="p" value="problem" onclick="showField();"/> Problem</label>
+            <label><input type="radio" name="type" id="s" value="solution" onclick="showField();"/> Solution</label>
+            <label><input type="radio" name="type" id="b" value="both" onclick="showField();"/> Both</label>
+            <br />
+            
+            <!-- Slider to show the severity of the issue -->
+            <p>Severity of issue</p>
+            <p>0</p>
+            <input type="range" name="severity" id="severityRange" min="0" max="10"/>
+            <p>10</p>
+            
+            <section id="problemSection">
+                <label>Please enter problem here: <input type="text" name="problem" id="probInput"/></label>
+            </section>
+            
+            <section id="solutionSection">
+                <label>Please enter URL here: <input type="url" name="solution" id="solInput"/></label>
+            </section>
+            
+            <input type="submit" value="submit"/>
+        </form>
+</body>
+
+</html>
