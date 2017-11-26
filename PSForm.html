@@ -15,20 +15,22 @@
     </style>
        <script type="text/javascript">
         
-        function showField(){
-                
-                if(document.getElementByID('p').checked){
+        function showField(psValue){
+            
+                if(psValue=="problem"){
                     
-                    document.getElementById('problemSection').style.display = 'block';
+                    document.getElementById("problemSection").style.display = 'block';
+                    document.getElementById("solutionSection").style.display = 'none';
                 }
-                else if(document.getElementByID('s').checked){
+                if(psValue=="solution"){
                     
-                    document.getElementById('solutionSection').style.display = 'block';
+                    document.getElementById("solutionSection").style.display = 'block';
+                    document.getElementById("problemSection").style.display = 'none';
                 }
-                else if(document.getElementById('b').checked){
+                if(psValue=="both"){
                     
-                    document.getElementById('problemSection').style.display = 'block';
-                    document.getElementById('solutionSection').style.display = 'block';
+                   document.getElementById("problemSection").style.display = 'block';
+                    document.getElementById("solutionSection").style.display = 'block';
                 }
         }
     </script>
@@ -52,9 +54,9 @@
             
             <!-- Labels and check boxes for problem/solution or both -->
             <p>Do you wish to submit a problem, solution, or both?</p>
-            <label><input type="radio" name="type" id="p" value="problem" onclick="showField();"/> Problem</label>
-            <label><input type="radio" name="type" id="s" value="solution" onclick="showField();"/> Solution</label>
-            <label><input type="radio" name="type" id="b" value="both" onclick="showField();"/> Both</label>
+            <label><input type="radio" name="type" id="prob" value="problem" onchange="showField(this.value);"/> Problem</label>
+            <label><input type="radio" name="type" id="sol" value="solution" onchange="showField(this.value);"/> Solution</label>
+            <label><input type="radio" name="type" id="both" value="both" onchange="showField(this.value);"/> Both</label>
             <br />
             
             <!-- Slider to show the severity of the issue -->
