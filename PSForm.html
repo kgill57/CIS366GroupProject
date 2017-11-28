@@ -76,15 +76,23 @@
             <input type="submit" value="submit"/>
         </form>
 </body>
-    <footer>
-        
-        <p>Michael Lee&copy;</p>
-        <script type="text/javascript">
-        document.write("Last Modified: ", document.lastModified);
+<footer>
+    <p>
+        Kyle McGill, Alex Glissman, Michael Lee, Param Ektare &copy; 
+        <script type = "text/javascript">
+            var update = new Date(document.lastModified);
+            var modMonth = update.getMonth() + 1;
+            var modDate = update.getDate();
+            var modYear = update.getFullYear();
+            document.write("<br / >Last Modified: " + modMonth + "/" + modDate + "/" + modYear);
         </script>
-        <a href="http://www.facebook.com" target="_blank"><img src="logo_facebook.png" height="50" width="50" /></a>
-        <a href="http://www.instagram.com" target="_blank"><img src="instagram.png" width="50" height="50" /></a>
-        <a href="http://twitter.com" target="_blank"><img src="twitter.png" width="50" height="50" /></a>
-    </footer>
+            
+    </p>
+    
+<a href="http://www.facebook.com" target="_blank"><img src="images/logo_facebook.png" height="50" width="50" /></a>
+<a href="http://www.instagram.com" target="_blank"><img src="images/instagram.png" width="50" height="50" /></a>
+<a href="http://twitter.com" target="_blank"><img src="images/twitter.png" width="50" height="50" /></a>
+
+</footer>
 
 </html>
