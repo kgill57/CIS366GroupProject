@@ -63,29 +63,33 @@
 
 body {
     background-color: #D1F995;
-    margin: 0 15%;
 }
 
-.btHeader {
+.header {
     text-align: center;
     font-family: 'btFont';
     color: green;
 }
 
-#btLogo {
+.logo {
     position: absolute;
-    top: -120px;
-    right: 300px;
+    top: -110px;
+    left: 300px;
 }
 
-#btNav li {
+nav li {
     text-align: center;
     display: inline;
     padding: 10px;
     left: -20px;
 }
 
-.btNavButton {
+nav {
+    padding-left: 610px;
+    padding-top: 10px;
+}
+
+.navButton {
     border: solid;
     text-align: center;
     border-radius: 25px;
@@ -102,6 +106,28 @@ body {
     border-color: green;
 }
 
+.content {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header {
+    font-family: 'btFont';
+    color: green;
+    font-size: 200%;
+    border-bottom: solid;
+}
+
+.container h3 {
+    color: green;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/*specific style for Business and Tech page*/
 #elephant {
     position: relative;
     width: 500px;
@@ -111,7 +137,7 @@ body {
     border-color: green;
 }
 
-#btSection1 {
+.container {
     text-align: center;
     margin-left: 300px;
     margin-right: 300px;
@@ -122,12 +148,72 @@ body {
     background-color: #BDF3F1;
 }
 
-#btSection1 h3 {
-    color: green;
+/*style for site info page*/
+#psFormTitle {
+    text-align: center;
+    font-size: 2em;
 }
-
-#btFooter {
-    margin-top: 200px;
+#psNote {
+    font-size: 80%;
+    text-align: center;
+    border-bottom: 4px double #999999;
+}
+#psContainer {
+    background-color: #D1F995;
+    padding: 10px 20px;
+}
+#psBody {
+    margin: auto;
+    width: 75%;
+    line-height: 2em; 
+}
+#psTextbox1, #psTextbox2, #psTextbox3, #psTextbox4, #psTextbox5, #psTextbox6 {
+    width: 240px;  
+    border: 1px solid #999999; 
+    padding: 5px;
+}
+#psTextbox1 {
+    margin-left: 40px;
+}
+#psTextbox2 {
+    margin-left: 41.5px;
+}
+#psTextbox3 {
+    margin-left: 67.5px;
+}
+#psTextbox4 {
+    margin-left: 9.5px;
+}
+.psEmails:before, .psNames:before {
+    
+    content: "*";
+}
+#problemSection, #solutionSection {
+    display: none;
+}
+#psRange {
+    position: relative;
+    top: .7em;
+}
+#psRangeOut {
+    position: relative;
+    left: 4.7em;
+    top: .3em
+}
+#buttonWrapper {
     text-align: center;
 }
+input[type="text"], input[type="email"]
+{
+background-color: #eee;
+border-top: 0px;
+border-left: 0px;
+border-right: 1px solid #888;
+border-bottom: 1px solid #888;
+padding: 5px;
+}
+input[type="radio"] {
+margin-left: 2.5em;
+margin-right: .5em;
+}	
 
