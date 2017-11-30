@@ -7,10 +7,7 @@
 <title>Problem/Solution Form</title>
 
     <link rel="stylesheet" type="text/css" href="style.css">
-<<<<<<< HEAD
-        
-=======
->>>>>>> c3dce9dd4eab56d40bc661ef15cfc6d75f1f11e5
+
        <script type="text/javascript">
         
         function showField(psValue){
@@ -34,90 +31,85 @@
     </script>
 </head>
 
-<<<<<<< HEAD
-<body>
-    <nav>
-    <ul>
-        <li class="navButton"> <a href="BusinessAndTech.html">Forms</a></li>
-        <li class="navButton"><a href="solution.html">Solutions</a></li>  
-        <li class="navButton"> <a href="/">Site Information</a></li>
-    </ul>
-    <a href="HomePage.html"><img id="btLogo" src="images/sustainability-logo.svg" width="300" height="300"></a>
-</nav>
-<section class="container">
-    <h2>Problem/Solution Form</h2>
-=======
-<body id="psBody">
-    <section id="psContainer">
-    <h2 id="psFormTitle">Problem/Solution Form</h2>
-    
-        <p id="psNote">Please fill out the form below. If you have any questions, please e-mail <a href="">lee7mx@dukes.jmu.edu</a>
-        <br/> The following fields with * are required</p>
->>>>>>> c3dce9dd4eab56d40bc661ef15cfc6d75f1f11e5
-    
-        <form name="PSForm" method="post" action="Confirmation.html">
-            
-            <!-- Labels and text fields for first and last names -->
-            <label class="psNames">First Name: <input id="psTextbox1" type="text" name="fn" id=fname placeholder="First Name" required></label>
-            <br />
-            <label class="psNames">Last Name: <input id="psTextbox2" type="text" name="ln" id=lname placeholder="Last Name" required></label>
-            <br />
-            
-            <!-- Labels and text fields for email -->
-            <label class="psEmails">E-mail: <input id="psTextbox3" type="email" name="email" id="e_mail" placeholder="Email"required/></label>     
-            <br />
-            <label class="psEmails">Confirm E-mail: <input id="psTextbox4" type="email" name="email2" id="e_mail2" onblur="checkEmail();" placeholder="email" required/></label>
-            <br /><br />
-            
-            <!-- Labels and check boxes for problem/solution or both -->
-            <p>Do you wish to submit a problem, solution, or both?</p>
-            <label><input type="radio" name="type" id="prob" value="problem" onchange="showField(this.value);"/> Problem</label>
-            <label><input type="radio" name="type" id="sol" value="solution" onchange="showField(this.value);"/> Solution</label>
-            <label><input type="radio" name="type" id="both" value="both" onchange="showField(this.value);"/> Both</label>
-            <br /><br />
-            
-            <!-- Slider to show the severity of the issue -->
-            <p>Severity of issue</p>
-            <span>0</span>
-            <input id="psRange" type="range" name="severity" id="severityRange" min="0" max="10" onchange="showSeverity.value = severity.valueAsNumber"/>
-            <span>10</span>
-            <br />
-            <span id="psRangeOut"><output for="psRange" name="showSeverity">5</output></span>
-           <br />
-            
-            <section id="problemSection">
-                <label>Please enter problem here: <input id="psTextbox5" type="text" name="problem" id="probInput"/></label>
-            </section>
-            <br />
-            
-            <section id="solutionSection">
-                <label>Please enter URL here: <input id="psTextbox6" type="url" name="solution" id="solInput" /></label>
-            </section>
-            <br />
-            
-            <section id="buttonWrapper">
-                <input type="submit" value="submit"/>
-            </section>
-        </form>
-        </section>
-</body>
-<footer>
-    <p>
-        Kyle McGill, Alex Glissman, Michael Lee, Param Ektare &copy; 
-        <script type = "text/javascript">
-            var update = new Date(document.lastModified);
-            var modMonth = update.getMonth() + 1;
-            var modDate = update.getDate();
-            var modYear = update.getFullYear();
-            document.write("<br / >Last Modified: " + modMonth + "/" + modDate + "/" + modYear);
-        </script>
-            
-    </p>
-    
-<a href="http://www.facebook.com" target="_blank"><img src="images/logo_facebook.png" height="50" width="50" /></a>
-<a href="http://www.instagram.com" target="_blank"><img src="images/instagram.png" width="50" height="50" /></a>
-<a href="http://twitter.com" target="_blank"><img src="images/twitter.png" width="50" height="50" /></a>
+    <body>
+        <nav>
+            <ul>
+                <li class="navButton"><a href="solution.html">Solutions</a></li>
+                <li class="navButton"><a href="BusinessAndTech.html">Business and Technology Solutions</a></li>
+                <li class="navButton"><a href="PSForm.html">Forms</a></li>  
+                <li class="navButton"><a href="/">Site Information</a></li>
+            </ul>
+            <a href="HomePage.html"><img class="logo" src="images/sustainability-logo.svg" width="300" height="300"></a>
+        </nav>
 
-</footer>
+                <section id="psContainer">
+                    <h2 class="header">Problem/Solution Form</h2>
+    
+                    <p id="psNote">Please fill out the form below. If you have any questions, please e-mail <a href="">lee7mx@dukes.jmu.edu</a>
+                    <br/> The following fields with * are required</p>
+    
+                    <form name="PSForm" method="post" action="Confirmation.html">
+            
+                    <!-- Labels and text fields for first and last names -->
+                    <label class="psNames">First Name: <input id="psTextbox1" type="text" name="fn" id=fname placeholder="First Name" required></label>
+                    <br />
+                    <label class="psNames">Last Name: <input id="psTextbox2" type="text" name="ln" id=lname placeholder="Last Name" required></label>
+                    <br />
+            
+                    <!-- Labels and text fields for email -->
+                    <label class="psEmails">E-mail: <input id="psTextbox3" type="email" name="email" id="e_mail" placeholder="Email"required/></label>     
+                    <br />
+                    <label class="psEmails">Confirm E-mail: <input id="psTextbox4" type="email" name="email2" id="e_mail2" onblur="checkEmail();" placeholder="email" required/></label>
+                    <br /><br />
+            
+                    <!-- Labels and check boxes for problem/solution or both -->
+                    <p>Do you wish to submit a problem, solution, or both?</p>
+                    <label><input type="radio" name="type" id="prob" value="problem" onchange="showField(this.value);"/> Problem</label>
+                    <label><input type="radio" name="type" id="sol" value="solution" onchange="showField(this.value);"/> Solution</label>
+                    <label><input type="radio" name="type" id="both" value="both" onchange="showField(this.value);"/> Both</label>
+                    <br /><br />
+            
+                    <!-- Slider to show the severity of the issue -->
+                    <p>Severity of issue</p>
+                    <span>0</span>
+                    <input id="psRange" type="range" name="severity" id="severityRange" min="0" max="10" onchange="showSeverity.value = severity.valueAsNumber"/>
+                    <span>10</span>
+                    <br />
+                    <span id="psRangeOut"><output for="psRange" name="showSeverity">5</output></span>
+                    <br /><br />
+            
+                    <section id="problemSection">
+                        <label>Please enter problem here: <input id="psTextbox5" type="text" name="problem" id="probInput"/></label>
+                    </section>
+                    <br />
+            
+                    <section id="solutionSection">
+                        <label>Please enter URL here: <input id="psTextbox6" type="url" name="solution" id="solInput" /></label>
+                    </section>
+                    <br />
+            
+                    <section id="buttonWrapper">
+                        <input type="submit" value="submit"/>
+                    </section>
+                </form>
+            </section>
+    <footer>
+        <p>
+            Kyle McGill, Alex Glissman, Michael Lee, Param Ektare &copy; 
+            <script type = "text/javascript">
+                var update = new Date(document.lastModified);
+                var modMonth = update.getMonth() + 1;
+                var modDate = update.getDate();
+                var modYear = update.getFullYear();
+                document.write("<br / >Last Modified: " + modMonth + "/" + modDate + "/" + modYear);
+            </script>
+        </p>
+    
+            <a href="http://www.facebook.com" target="_blank"><img src="images/logo_facebook.png" height="50" width="50" /></a>
+            <a href="http://www.instagram.com" target="_blank"><img src="images/instagram.png" width="50" height="50" /></a>
+            <a href="http://twitter.com" target="_blank"><img src="images/twitter.png" width="50" height="50" /></a>
 
+    </footer>
+
+    </body>
 </html>
