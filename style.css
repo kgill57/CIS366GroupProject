@@ -63,7 +63,7 @@
 
 body {
     background-color: #D1F995;
-    margin: 0 15%;
+    margin: 0 7%;
 }
 
 .btHeader {
@@ -75,7 +75,7 @@ body {
 #btLogo {
     position: absolute;
     top: -120px;
-    right: 300px;
+    right: 100px;
 }
 
 #btNav li {
@@ -119,7 +119,9 @@ body {
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 30px;
+    width: 600px;
     background-color: #BDF3F1;
+    align-content: center;
 }
 
 #btSection1 h3 {
