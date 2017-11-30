@@ -73,20 +73,28 @@ body {
 
 .logo {
     position: absolute;
-    top: -110px;
-    left: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: -100px;
 }
 
-nav li {
+/*.page {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}*/
+
+nav a {
     text-align: center;
     display: inline;
     padding: 10px;
-    left: -20px;
 }
 
 nav {
-    padding-left: 610px;
-    padding-top: 10px;
+    position: relative;
+    top: 15px;
 }
 
 .navButton {
@@ -97,18 +105,19 @@ nav {
     border-color:#1C9691;
 }
 
-#lion {
-    position: relative;
-    width: 500px;
-    height: 350px;
-    display: inline-block;
-    border: solid;
-    border-color: green;
-}
-
 .content {
     margin-right: auto;
     margin-left: auto;
+    border: solid;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    background-color: #BDF3F1;
+    border-color: green;
+}
+
+.content p {
+    text-align: left;
 }
 
 .header {
@@ -116,6 +125,15 @@ nav {
     color: green;
     font-size: 200%;
     border-bottom: solid;
+}
+
+.container {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    min-width: 40%;
+    
 }
 
 .container h3 {
@@ -137,92 +155,71 @@ footer {
     border-color: green;
 }
 
-.container {
-    text-align: center;
-    margin-left: 300px;
-    margin-right: 300px;
+#lion {
+    position: relative;
+    width: 500px;
+    height: 350px;
+    display: inline-block;
     border: solid;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 30px;
-    background-color: #BDF3F1;
+    border-color: green;
 }
 
-/*style for problems/solutions form page*/
-
+/*style for site info page*/
+#psFormTitle {
+    text-align: center;
+    font-size: 2em;
+}
 #psNote {
     font-size: 80%;
     text-align: center;
     border-bottom: 4px double #999999;
-    margin-bottom: 40px;
-    margin-top: 20px;
-    padding-bottom: 20px;
 }
 #psContainer {
-    width: 58.5%;
-    margin: auto;
-    margin-top: 35px;
-    border: solid;
-    padding-left: 20px;
-    background-color: #BDF3F1;
+    background-color: #D1F995;
+    padding: 10px 20px;
 }
-
+#psBody {
+    margin: auto;
+    width: 75%;
+    line-height: 2em; 
+}
 #psTextbox1, #psTextbox2, #psTextbox3, #psTextbox4, #psTextbox5, #psTextbox6 {
     width: 240px;  
     border: 1px solid #999999; 
     padding: 5px;
-    margin-top: 10px;
 }
-
 #psTextbox1 {
     margin-left: 40px;
 }
-
 #psTextbox2 {
     margin-left: 41.5px;
 }
-
 #psTextbox3 {
     margin-left: 67.5px;
 }
-
 #psTextbox4 {
     margin-left: 9.5px;
 }
-
-#psTextbox5 {
-    margin-left: 5px;
-}
-
-#psTextbox6 {
-    margin-left: 26px;
-}
-
 .psEmails:before, .psNames:before {
     
     content: "*";
 }
-
 #problemSection, #solutionSection {
     display: none;
 }
-
 #psRange {
     position: relative;
     top: .7em;
 }
-
 #psRangeOut {
     position: relative;
     left: 4.7em;
     top: .3em
 }
-
 #buttonWrapper {
     text-align: center;
 }
-
-input[type="text"], input[type="email"], input[type="url"]
+input[type="text"], input[type="email"]
 {
 background-color: #eee;
 border-top: 0px;
@@ -231,9 +228,40 @@ border-right: 1px solid #888;
 border-bottom: 1px solid #888;
 padding: 5px;
 }
-
 input[type="radio"] {
 margin-left: 2.5em;
 margin-right: .5em;
 }	
+
+/*Specific info for the solution page*/
+
+#soFoun1, #soFoun2, #soFoun3, #soSink {
+    transform: rotate(90deg);
+    width: 325px;
+    height: 350px;
+}
+
+#img1  {
+    float: left;
+}
+
+#img2 {
+    float: right;
+}
+
+#soPillars {
+    margin-top: 400px;
+}
+
+#img3 {
+    
+    margin: 0;
+}
+
+#img4 {
+    
+    margin: 0;
+}
+
+
 
