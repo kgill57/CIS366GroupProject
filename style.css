@@ -54,6 +54,80 @@
 /* http://paletton.com */
 
 
+@font-face {
+    font-family: 'btFont';
+    src: url('font/sinkin-sans/BusAndTechFont.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     background-color: #D1F995;
+    margin: 0 15%;
 }
+
+.btHeader {
+    text-align: center;
+    font-family: 'btFont';
+    color: green;
+}
+
+#btLogo {
+    position: absolute;
+    top: -120px;
+    right: 300px;
+}
+
+#btNav li {
+    text-align: center;
+    display: inline;
+    padding: 10px;
+    left: -20px;
+}
+
+.btNavButton {
+    border: solid;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #FFF398;
+    border-color:#1C9691;
+}
+
+#lion {
+    position: relative;
+    width: 500px;
+    height: 350px;
+    display: inline-block;
+    border: solid;
+    border-color: green;
+}
+
+#elephant {
+    position: relative;
+    width: 500px;
+    height: 350px;
+    display: inline-block;
+    border: solid;
+    border-color: green;
+}
+
+#btSection1 {
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
+    border: solid;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    background-color: #BDF3F1;
+}
+
+#btSection1 h3 {
+    color: green;
+}
+
+#btFooter {
+    margin-top: 200px;
+    text-align: center;
+}
+
