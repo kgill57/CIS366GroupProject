@@ -61,31 +61,29 @@
     font-style: normal;
 }
 
-/*body {
+body {
     background-color: #D1F995;
-    margin: 0 15%;
-}*/
-
-.btHeader {
-    text-align: center;
-    font-family: 'btFont';
-    color: green;
 }
 
-#btLogo {
+.logo {
     position: absolute;
-    top: -120px;
-    right: 300px;
+    top: -110px;
+    left: 310px;
 }
 
-#btNav li {
+nav {
+    padding-top: 10px;
+    padding-left: 620px;
+}
+
+nav li {
     text-align: center;
     display: inline;
     padding: 10px;
     left: -20px;
 }
 
-.btNavButton {
+.navButton {
     border: solid;
     text-align: center;
     border-radius: 25px;
@@ -102,6 +100,28 @@
     border-color: green;
 }
 
+.content {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header {
+    font-family: 'btFont';
+    color: green;
+    font-size: 200%;
+    border-bottom: solid;
+}
+
+#container h3 {
+    color: green;
+}
+
+footer {
+    margin-top: 200px;
+    text-align: center;
+}
+
+/*specific style for Business and Tech page*/
 #elephant {
     position: relative;
     width: 500px;
@@ -111,7 +131,7 @@
     border-color: green;
 }
 
-#btSection1 {
+#container {
     text-align: center;
     margin-left: 300px;
     margin-right: 300px;
@@ -120,15 +140,7 @@
     padding-right: 50px;
     padding-bottom: 30px;
     background-color: #BDF3F1;
-}
-
-#btSection1 h3 {
-    color: green;
-}
-
-#btFooter {
-    margin-top: 200px;
-    text-align: center;
+    border-color: green;
 }
 
 
