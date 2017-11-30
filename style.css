@@ -133,3 +133,34 @@ body {
     text-align: center;
 }
 
+#soTitle {
+    text-align: center;
+}
+
+#soNav li {
+    text-align: center;
+    display: inline;
+    padding: 10px;
+    left: -20px;
+}
+
+.soNavButton {
+    border: solid;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #FFF398;
+    border-color:#1C9691;
+}
+
+#soLogo {
+    position: absolute;
+    top: -120px;
+    right: 100px;
+}
+
+#soSection1 {
+    margin: 0 7%;
+    border: solid;
+    padding: 20px;
+    width: 1000px;
+}
