@@ -131,7 +131,7 @@ nav {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    max-width: 50%;
+    max-width: 70%;
     min-width: 40%;
     
 }
@@ -239,6 +239,8 @@ margin-right: .5em;
     transform: rotate(90deg);
     width: 325px;
     height: 350px;
+    border: solid;
+    border-color: green;
 }
 
 #img1  {
@@ -251,16 +253,6 @@ margin-right: .5em;
 
 #soPillars {
     margin-top: 400px;
-}
-
-#img3 {
-    
-    margin: 0;
-}
-
-#img4 {
-    
-    margin: 0;
 }
 
 
