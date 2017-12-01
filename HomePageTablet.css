@@ -5,7 +5,7 @@ body {
     
     h1{
     position: absolute;
-    margin-top: 18em;
+    /*margin-top: 18em;*/
     margin-left: 100em;
     color: black;
     font-family: Arial sans-serif;
@@ -32,7 +32,7 @@ body {
     
     nav li {
     position: relative;
-    text-align: center;
+   /* text-align: center;*/
     display: inline;
     padding-right: 80px;
     top: 14em;
@@ -104,7 +104,7 @@ body {
 
 .slides img { 
   display: block;
-  position: absolute; 
+  /*position: absolute;*/
   transition: opacity 1s;
   opacity: 0;
   width: 100%;
@@ -157,4 +157,3 @@ body {
     margin-left: 15em;
     bottom: 15em;
     }
-
